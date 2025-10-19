@@ -24,6 +24,7 @@ public class post {
 			  post("https://reqres.in/api/users").
 		then().
 			  statusCode(201);
+//		check
 	}
 
 }

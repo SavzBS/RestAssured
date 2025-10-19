@@ -1,0 +1,15 @@
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+
+public class get {
+
+	public static void main(String[] args) {
+		 Response res = RestAssured.get("https://reqres.in/api/users?page=2");
+		 System.out.println(".asSstring output"+res.statusCode());
+		 System.out.println("get response"+res.getBody().asString());
+		 System.out.println(res.statusCode());
+		 System.out.println();
+		 
+	}
+
+}
